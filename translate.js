@@ -11,7 +11,7 @@ if (cli_args.length >= 1) {
   let to;
 
   if (cli_args.length == 1) {
-    if (text.match(/[a-z ]/i)) {
+    if (text.match(/[a-z ,.;'"!?(){}[]\n\r\t]/i)) {
       to = 'zh-cn';
     } else {
       to = 'en';
@@ -33,5 +33,6 @@ if (cli_args.length >= 1) {
     console.error(err);
   });
 } else {
-  p('please give text')
+  p('Please give the content to be translated.')
+  process.exit(1)
 }
