@@ -11,7 +11,7 @@ if (cli_args.length >= 1) {
   let to;
 
   if (cli_args.length == 1) {
-    if (text.match(/[a-z ,.;'"!?(){}[]\n\r\t]/i)) {
+    if (text.match(/[a-z ,.;'"!?(){}\[\]\n\r\t]/i)) {
       to = 'zh-cn';
     } else {
       to = 'en';

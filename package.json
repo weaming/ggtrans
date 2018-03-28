@@ -1,6 +1,6 @@
 {
   "name": "ggtrans",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "personal translator for myself",
   "main": "translate.js",
   "bin": {
